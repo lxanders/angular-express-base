@@ -5,7 +5,14 @@
     "author": "Alexander Schmidt <alexanderschmidt1@gmail.com>",
     "license": "MIT",
     "main": "",
-    "scripts": {},
+    "scripts": {
+        "start": "node server/index.js",
+        "test": "npm run test:server",
+        "test:server": "npm run test:server:unit && npm run test:server:functional",
+        "test:server:functional": "mocha test/functional/server --opts test/functional/server/mocha.opts",
+        "test:server:unit": "mocha test/unit/server --opts test/unit/server/mocha.opts",
+        "test:server:unit:watch": "npm run test:server:unit -- --watch --reporter min"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lxanders/angular-express-base.git"
@@ -18,5 +25,16 @@
         "angular",
         "express",
         "webpack"
-    ]
+    ],
+    "dependencies": {
+        "express": "4.13.3",
+        "morgan": "1.6.1",
+        "winston": "2.1.1"
+    },
+    "devDependencies": {
+        "chai": "^3.4.1",
+        "mocha": "^2.3.4",
+        "sinon": "^1.17.2",
+        "sinon-chai": "^2.8.0"
+    }
 }
