@@ -21,4 +21,16 @@ describe('registerRoutes', function () {
         expect(router.get).to.have.been.calledWith('*');
         expect(res.sendFile).to.have.been.calledWithExactly(indexHtmlPath);
     });
+
+    it('should serve the bundle file for /bundle.js', function () {
+        var req = {};
+        var res = { sendFile: sinon.spy() };
+        var router = { get: sinon.stub().yields(req, res) };
+        var bundleJsPath = path.resolve(__dirname, '..', '..', '..', 'build', 'bundle.js');
+
+        registerRoutes(router);
+
+        expect(router.get).to.have.been.calledWith('/bundle.js');
+        expect(res.sendFile).to.have.been.calledWithExactly(bundleJsPath);
+    });
 });

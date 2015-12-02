@@ -6,6 +6,7 @@
     "license": "MIT",
     "main": "",
     "scripts": {
+        "build": "webpack",
         "dev": "webpack --watch --devtool source-map & node-dev server/index.js",
         "lint": "eslint .",
         "start": "node server/index.js",
@@ -44,6 +45,6 @@
         "mocha": "^2.3.4",
         "node-dev": "^2.7.1",
         "sinon": "^1.17.2",
-        "sinon-chai": "^2.8.0"
+        "webpack": "^1.12.9"
     }
 }

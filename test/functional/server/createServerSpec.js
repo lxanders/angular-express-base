@@ -23,4 +23,13 @@ describe('createServer', function () {
             .expect(200)
             .expect('Content-Type', 'text/html; charset=UTF-8');
     });
+
+    it('should respond with an js file for the /bundle.js route', function () {
+        var logger = { info: sinon.spy() };
+        var request = supertest(createServer(express(), logger));
+
+        return request.get('/bundle.js')
+            .expect(200)
+            .expect('Content-Type', 'application/javascript');
+    });
 });
