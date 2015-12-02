@@ -11,9 +11,10 @@
         "start": "node server/index.js",
         "pretest": "npm run lint",
         "test": "npm run test:server",
-        "test:server": "npm run test:server:unit && npm run test:server:functional",
+        "test:server": "npm run test:server:unit:coverage && npm run test:server:functional",
         "test:server:functional": "mocha test/functional/server --opts test/functional/server/mocha.opts",
         "test:server:unit": "mocha test/unit/server --opts test/unit/server/mocha.opts",
+        "test:server:unit:coverage": "istanbul cover _mocha -- test/unit/server --opts test/unit/server/mocha.opts",
         "test:server:unit:watch": "npm run test:server:unit -- --watch --reporter min"
     },
     "repository": {
@@ -39,6 +40,7 @@
         "eslint": "^1.10.2",
         "eslint-config-defaults": "^7.1.1",
         "eslint-plugin-mocha": "^1.1.0",
+        "istanbul": "^0.4.1",
         "mocha": "^2.3.4",
         "node-dev": "^2.7.1",
         "sinon": "^1.17.2",
