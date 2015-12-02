@@ -1,0 +1,22 @@
+{
+    "name": "angular-express-base",
+    "version": "0.0.0",
+    "description": "Simple angular spa initially served by express and bundled with webpack",
+    "author": "Alexander Schmidt <alexanderschmidt1@gmail.com>",
+    "license": "MIT",
+    "main": "",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lxanders/angular-express-base.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lxanders/angular-express-base/issues"
+    },
+    "homepage": "https://github.com/lxanders/angular-express-base#readme",
+    "keywords": [
+        "angular",
+        "express",
+        "webpack"
+    ]
+}
