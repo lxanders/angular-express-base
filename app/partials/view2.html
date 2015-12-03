@@ -1,10 +1,6 @@
 <h1>View: {{ viewName }}</h1>
 
-<p>
-    Mauris vel sem tellus. Donec mi eros, convallis eget auctor vitae, gravida ut quam. Nam malesuada consectetur
-    pharetra. Vivamus metus tellus, placerat eget lorem tempus, vulputate elementum justo. Vestibulum porta metus vel
-    justo commodo euismod. Phasellus et consequat orci, eget vehicula diam. Nullam fringilla, magna sed vestibulum
-    rhoncus, augue nunc pretium nunc, eget viverra risus erat eget tellus. Ut est orci, finibus eu blandit in,
-    vulputate at nibh. Ut luctus erat a neque cursus, non sodales elit malesuada. Ut ut tempor eros. Etiam in quam
-    metus.
-</p>
+First three numbers:
+<ul>
+    <li ng-repeat='randomNumber in numbers | limitTo: 3'>{{ randomNumber | number: 2 }}</li>
+</ul>

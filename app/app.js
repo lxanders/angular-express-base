@@ -3,11 +3,13 @@
 var angular = require('angular');
 var angularRoute = require('angular-route');
 
-angular.module('controllers', []);
+angular.module('services', []);
+angular.module('controllers', [ 'services' ]);
 
 require('./controllers/view1');
 require('./controllers/view1Details');
 require('./controllers/view2');
+require('./services/example');
 
 var app = angular.module('app', [ angularRoute, 'controllers' ]);
 
