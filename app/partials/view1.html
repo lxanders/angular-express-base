@@ -1,7 +1,6 @@
 <h1>View: {{ viewName }}</h1>
 
 Filter: <input ng-model="filter.name">
-
 <ul>
     <li ng-repeat="name in names | filter: filter.name">{{ name }}</li>
 </ul>

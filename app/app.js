@@ -19,13 +19,13 @@ app.config(function ($routeProvider, $locationProvider) {
             template: require('./partials/view1.html'),
             controller: 'View1Controller'
         })
-        .when('/view2', {
-            template: require('./partials/view2.html'),
-            controller: 'View2Controller'
-        })
         .when('/view1/:specifier', {
             template: require('./partials/view1Details.html'),
             controller: 'View1DetailsController'
+        })
+        .when('/view2', {
+            template: require('./partials/view2.html'),
+            controller: 'View2Controller'
         })
         .otherwise({
             redirectTo: '/view1'
