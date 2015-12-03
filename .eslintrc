@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": [
+        "defaults/configurations/google"
+    ],
+    "rules": {
+        "dot-location": [ 2, "property" ],
+        "indent": [ 2, 4 ],
+        "max-len": [ 2, 120, 4 ],
+        "no-unused-expressions": 2,
+        "no-unused-vars": 2,
+        "object-curly-spacing": [ 2, "always" ],
+        "space-before-function-paren": [ 2, { "anonymous": "always", "named": "never" } ],
+        "strict": [ 2, "global" ]
+    }
+}
