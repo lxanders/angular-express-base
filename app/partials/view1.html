@@ -1,9 +1,6 @@
 <h1>View: {{ viewName }}</h1>
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis odio at pretium scelerisque.
-    Praesent consectetur mattis eros ut finibus. Nullam velit urna, varius eu malesuada eget, ultrices id urna.
-    Proin porta consectetur sapien, ac hendrerit leo fringilla at. Cras pretium molestie velit, et faucibus sapien
-    scelerisque vitae. Nullam finibus risus quis imperdiet tempor. Vestibulum eu mauris non tortor sagittis vehicula
-    ut ut nibh. Duis ultrices mi eu risus aliquet posuere. Phasellus at arcu sed mauris mollis accumsan.
-</p>
+Filter: <input ng-model="filter.name">
+<ul>
+    <li ng-repeat="name in names | filter: filter.name">{{ name }}</li>
+</ul>
