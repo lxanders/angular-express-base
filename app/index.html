@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>angular-express-base</title>
@@ -8,7 +8,11 @@
 </head>
 <body>
     <header>
-        <span><a href="/">angular-express-base</a></span></span>
+        <ul>
+            <li><a href="/view1">view1</a></li>
+        </ul>
     </header>
+
+    <div ng-view></div>
 </body>
 </html>
