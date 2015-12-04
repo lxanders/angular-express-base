@@ -4,7 +4,7 @@
     "description": "Simple angular spa initially served by express and bundled with webpack",
     "author": "Alexander Schmidt <alexanderschmidt1@gmail.com>",
     "license": "MIT",
-    "main": "",
+    "main": "server/index.js",
     "scripts": {
         "build": "webpack",
         "dev": "webpack --watch --devtool source-map & node-dev server/index.js",
