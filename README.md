@@ -1,4 +1,4 @@
-# angular-express-base
+# Deprecated: angular-express-base
 
 This is a small demo project for an [`AngularJS`](https://angularjs.org/) single page application (spa).
 
